@@ -8,7 +8,6 @@ export default function ApprovalList({ items = [], onApprove, onReject, onOpen }
   const [itemsPerPage, setItemsPerPage] = useState(6);
   const [selectedItems, setSelectedItems] = useState(new Set());
 
-  // Safe items array
   const safeItems = items || [];
 
   const sortedItems = useMemo(() => {
